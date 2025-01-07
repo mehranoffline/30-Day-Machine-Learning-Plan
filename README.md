@@ -1,0 +1,2 @@
+# 30-Day Machine Learning Plan
+ Below is a 30-day plan designed to focus on foundational and key concepts of Machine Learning for entering the field of Data Science. This plan is structured to include 3–4 hours of daily study and practice (you can adjust this based on your learning speed and available time). Additionally, each night, a short interview session (mock interviews) is included to review the day's material and reinforce prior knowledge.
