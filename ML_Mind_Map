@@ -1,0 +1,32 @@
+// ML Concepts Mind Map
+digraph {
+	ML [label="Machine Learning" color=lightblue shape=ellipse style=filled]
+	SL [label="Supervised Learning" color=lightgreen shape=box style=filled]
+	UL [label="Unsupervised Learning" color=lightyellow shape=box style=filled]
+	EDA [label="Exploratory Data Analysis" color=orange shape=box style=filled]
+	Regression [label=Regression color=pink shape=box style=filled]
+	SL_Regression [label="Regression (Linear, Logistic)" shape=box]
+	SL_Classification [label=Classification shape=box]
+	SL -> SL_Regression
+	SL -> SL_Classification
+	UL_Clustering [label="Clustering (K-Means, DBSCAN)" shape=box]
+	UL_Dimensionality [label="Dimensionality Reduction (PCA, t-SNE)" shape=box]
+	UL -> UL_Clustering
+	UL -> UL_Dimensionality
+	EDA_Scatter [label="Scatter Plots" shape=box]
+	EDA_Histogram [label=Histograms shape=box]
+	EDA_BoxPlot [label="Box Plots" shape=box]
+	EDA_Correlation [label="Correlation Analysis" shape=box]
+	EDA -> EDA_Scatter
+	EDA -> EDA_Histogram
+	EDA -> EDA_BoxPlot
+	EDA -> EDA_Correlation
+	Regression_Linear [label="Linear Regression" shape=box]
+	Regression_Polynomial [label="Polynomial Regression" shape=box]
+	Regression_Logistic [label="Logistic Regression" shape=box]
+	Regression_Feature [label="Feature Importance" shape=box]
+	Regression -> Regression_Linear
+	Regression -> Regression_Polynomial
+	Regression -> Regression_Logistic
+	Regression -> Regression_Feature
+}
