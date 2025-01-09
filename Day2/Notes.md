@@ -125,3 +125,26 @@ Additional Explanations:
 K-Means: An algorithm that partitions the data into a predefined number of clusters (k) by minimizing the variance within each cluster. It assigns each data point to the nearest cluster center.
 n_clusters: The number of clusters you want the algorithm to form.
 random_state: Ensures that the results are reproducible by setting the seed for the random number generator.
+3. Overfitting و Underfitting
+
+Overfitting: The model performs well on training data but poorly on unseen data.
+Underfitting: The model fails to capture patterns in the training data.
+4. (Model Evaluation)
+Cross-Validation: Splitting data into multiple folds for better evaluation.
+Metrics: Metrics like Accuracy, Precision, and Recall for evaluating performance.
+4-1.Definition: Cross-validation is a method to evaluate the performance of a model by splitting the data into several parts or "folds". The model is trained on some folds and tested on the remaining one, iteratively.
+Goal: Reduce the impact of bias and variance and provide a more reliable evaluation of the model.
+Common Methods:
+k-Fold Cross-Validation: The data is divided into k parts. In each iteration, one part is used for testing and the rest for training.
+Stratified k-Fold: Similar to k-Fold but preserves the class distribution across folds (useful for classification tasks).
+Leave-One-Out Cross-Validation (LOOCV): Each data point is used once as a test set, and the rest as the training set.
+4-2.Accuracy: Definition: The ratio of correct predictions to the total predictions. 
+Example: If there are 100 samples and the model makes 90 correct predictions, 
+Accuracy = 90 100 = 0.9 
+Limitation: Accuracy can be misleading in imbalanced datasets. 
+Precision: Definition: The ratio of correctly predicted positive observations to the total predicted positives.
+ Definition: The ratio of correctly predicted positive observations to all the actual positives. 
+ Use: When it is important to capture all positives (e.g., detecting cancer). 
+ F1-Score: 
+ Definition: The harmonic mean of Precision and Recall. 
+​ Use: When balancing Precision and Recall is critical.
